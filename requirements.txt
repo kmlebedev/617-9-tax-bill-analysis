@@ -1,0 +1,9 @@
+# CLI-инструменты, которые использует refresh.sh.
+# Установка:
+#   python3 -m pip install 'markitdown[all]'
+#   uv tool install 'graphifyy[pdf]'
+#   brew install poppler          # pdftotext, pdfinfo
+# Apple Pages (macOS) используется для .doc -> PDF; на Linux замените на LibreOffice.
+
+markitdown[all]
+graphifyy[pdf]

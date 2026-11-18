@@ -1,0 +1,77 @@
+site_name: "617-9: риски для предпринимателя"
+site_description: "Разбор законопроекта № 617-9 ко второму чтению: риски, граф норм и ревью"
+site_url: https://kmlebedev.github.io/617-9-tax-bill-analysis/
+repo_url: https://github.com/kmlebedev/617-9-tax-bill-analysis
+repo_name: kmlebedev/617-9-tax-bill-analysis
+edit_uri: edit/main/
+
+docs_dir: .pages-site
+site_dir: _site
+
+theme:
+  name: material
+  language: ru
+  font: false
+  features:
+    - navigation.sections
+    - navigation.top
+    - navigation.footer
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+    - content.tabs.link
+    - toc.follow
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/weather-night
+        name: Переключить на тёмную тему
+    - scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/weather-sunny
+        name: Переключить на светлую тему
+
+plugins:
+  - search:
+      lang:
+        - ru
+        - en
+
+extra_css:
+  - stylesheets/extra.css
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.details
+
+nav:
+  - Аналитическая записка: index.md
+  - Граф: graph.md
+  - Интерактивный граф: graph.html
+  - Ревью: review.md
+  - О проекте: readme.md
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/kmlebedev/617-9-tax-bill-analysis

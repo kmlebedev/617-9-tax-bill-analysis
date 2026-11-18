@@ -1,0 +1,44 @@
+:root {
+  --md-admonition-icon--risk: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 2 3 14h7l-1 8 11-13h-7z"/></svg>');
+}
+
+.md-content {
+  max-width: 1120px;
+}
+
+.md-typeset table {
+  display: block;
+  overflow-x: auto;
+  font-size: 0.82rem;
+}
+
+.md-typeset h1 {
+  margin-bottom: 0.7em;
+}
+
+.md-typeset p {
+  max-width: none;
+}
+
+.mermaid {
+  overflow-x: auto;
+  padding: 0.5rem 0;
+}
+
+/* Make page citation tokens readable in long tables. */
+code {
+  white-space: nowrap;
+}
+
+@media print {
+  .md-sidebar,
+  .md-header,
+  .md-footer,
+  .md-tabs {
+    display: none !important;
+  }
+
+  .md-content {
+    max-width: none;
+  }
+}
